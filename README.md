@@ -10,3 +10,4 @@ Additional literature:
 1. [Hosting static website on Google Cloud](https://cloud.google.com/storage/docs/hosting-static-website) : HTTPS, SSL, IPv4 and load balancing.
 2. [Moving and renaming buckes](https://cloud.google.com/storage/docs/moving-buckets) : bucker data transfer via <code>Transfer</code>.
 3. [Using Google Cloud DNS Services](https://medium.com/hackernoon/hosting-a-free-static-website-on-google-cloud-storage-d0d83704173b) : set up DNS routing from GCP.
+4. [CSS Styling](https://www.youtube.com/watch?v=W-YHT9xHBgA) : everything you need to know about Pseudo Elements and Classes
