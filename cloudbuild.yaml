@@ -1,3 +1,3 @@
 steps:
   - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "./vision/explore-api", "gs://illya.bio"]
+    args: ["-m", "rsync", "-r", "-c", "-d", ".", "gs://illya.bio"]
