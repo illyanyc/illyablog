@@ -53,7 +53,7 @@ body {
 
 .nav-footer {
   bottom: 0;
-  height: 40px;
+  height: 55px;
   width: 100%;
   background-color: #4d4d4d;
   position: relative;
@@ -188,16 +188,35 @@ body {
   padding: 10px;
 }
 
+.about-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .about-row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .about-column {
     width: 100%;
   }
+
+  .about-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-column-pic {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    align-self: center;
+
+  }
+
 }
 
 /* youtube video formatting */
@@ -346,6 +365,7 @@ body {
   flex-direction: row;
   justify-content: left;
   margin: 5px;
+  margin-bottom: 15px;
 }
 
 .contact-me {
