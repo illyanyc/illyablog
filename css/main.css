@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*!
+* Illya's bio wesbite style sheet
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* undo html defaults */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+dfn {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+
+/* body */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+/* end body */
+
+
+/* start navbar */
+.navbar {
+    background:#6a6d68;
+}
+
+.nav-link,
+
+.navbar-brand {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-brand:hover {
+    color: rgb(191, 11, 11);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+/* end navbar */
+
+
+/* start page container */
+.header {
+  background-image: url("../img/bg2.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.0);
+}
+
+.quote-sec {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -30%);
+	text-align: center;
+  color: 'black';
+}
+
+.quote-sec h2 {
+	color: 'black';
+  text-align: center;
+}
+.quote-sec h3 {
+	color: 'black';
+  text-align: right;
+
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description button {
+	border: 1px solid #6ab446;
+	background: #6ab446;
+	border-radius: 0;
+	color: #fff;
+}
+
+.description button:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+	text-align: justify;
+}
+
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+
+/*--- media queries ---*/
+@media print {
+  body {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  h2+*, h3+*, h4+*, h5+*, h6+* {
+    page-break-before: avoid;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+	.team {
+		padding: 0 15px;
+	}
+
+}
+
+@media (max-width: 575.98px) {
+
+	.description {
+		left: 0;
+		padding: 0 15px;
+		position: absolute;
+		top: 10%;
+		transform: none;
+		text-align: center;
+	}
+
+	.description h1 {
+		font-size: 2em;
+	}
+
+	.description p {
+		font-size: 1.2rem;
+	}
+
+	.features {
+		margin: 0;
+	}
+
+	.team {
+		max-width: 60%;
+	}
+
+	#demo-modal .btn {
+		min-width: auto;
+	}
+}

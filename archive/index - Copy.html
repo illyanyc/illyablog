@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<?php include "count.php"; ?>
+<html lang="en">
+<head>
+  <title> illya nayshevsky, ph.d.</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='Content-Type' content='text/html; charset=uft-8'/>
+  <meta name="DC.Creator" content="illya nayshevsky"/>
+  <meta name="description" content="illya nayshevsky - trader, developer, chemist, collector"/>
+  <meta name='DC.Rights' content='https://creativecommons.org/licenses/by-nc/4.0/'/>
+  <meta name='copyright' content='https://creativecommons.org/licenses/by-nc/4.0/'/>
+  <meta name="keywords" content="technology, chemistry, python, C#, polymer, solar panels, solar energy, metamaterials, hydrophobic, machine learning, computer vision"/>
+
+  <!-- load  css -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<!--proper greeting-->
+<script>
+function ProperGreeting()
+{
+  var hour = new Date().getHours();
+  var greeting;
+  if (hour < 12)
+  {
+    greeting = "Good morning";
+  }
+  if (hour < 18)
+  {
+    greeting = "Good afternoon";
+  }
+  else
+  {
+    greeting = "Good evening"
+  }
+  document.getElementById("greet").innerHTML = greeting;
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">illya nayshevsky, ph.d.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+      <li><a class="nav-link active" aria-current="page" href="#">about</a></li>
+      <li><a class="nav-link active" aria-current="page" href=="#dev">my projects</a>
+      <li><a class="nav-link active" aria-current="page" href="#research">research</a></li>
+      <li><a class="nav-link active" aria-current="page" href="#publications">publications</a></li>
+      <li><a class="nav-link active" aria-current="page" href="#readinglist">reading list</a></li>
+      <li><a class="nav-link active" aria-current="page" href="#contact">contact me</a></li>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">illya nayshevsky, ph.d.</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">about</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=="#dev">my projects</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#research">research</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#publications">publications</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#readinglist">reading list</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">contact me</a>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+
+<body onload="ProperGreeting()">
+
+  <!-- navbar-->
+  <!-- <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header"><div class="nav-title">illya nayshevsky, ph.d.</div></div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#dev">development</a>
+      <a href="#research">research</a>
+      <a href="#publications">publications</a>
+      <a href="#reading">reading list</a>
+      <a href="#contact">contact me</a>
+    </div>
+  </div> -->
+
+  <div class="body">
+
+    <!--about me-->
+    <div class="section">
+      <a  name="about"></a>
+      <div class="about-row">
+
+        <div class="about-column">
+          <p><h2>about me.</h2></p>
+          <p><span id="greet"></span>, my name is Illya Nayshevsky. Welcome to my personal page. I am a registered investment advisor in NY and hold a Ph.D. in chemistry from <a href="https://www.gc.cuny.edu/home">City University of New York</a>.
+            <br>
+            <br>
+            I have researched superhydrophobic nano-coatings for anti-soiling and self-cleaning solar glass applications as well as anti-reflective coatings. These coatings help make solar panels more efficeint by stopping dust from accumulating on their surface. Anti-reflective coatings help solar panels get more light.
+            Currently, I am the CEO, CIO and founder of <a href="https://www.aic.llc/">Alpha Inertia Capital</a>, which is a quant investment advisory firm powered by machine learning and big data.
+            <br>
+            <br>
+            Currently I am interested in: machine learning models trained on backtest data (LSTM on TF), blockchain developement (Solidity), and automated trade excecution using IBKR platform.
+            <br>
+            <br>
+            I'm proficient in python and C#, and am quite nimble with Numpy/pandas, scikit-learn, TensorFlow, OpenCV, Matplotlib/ Plotly/ hvPlot and Google Cloud Platform. I'm in terested in perfecting my Amazon AWS and Solidity skills. I'm an avid user of jupyter notebooks for developement and GCP deployments for production.
+            <br>
+            <br>
+            I like to travel and read. You can check out my IG for some of the most recent travel pics, and my reading list.
+          </div>
+          <div class="about-column-pic">
+            <img class="rounded-circle" src="img/illya.jpg" style="width:100%; margin-top: 10%">
+          </div>
+        </div>
+      </div>
+
+      <!--dev-->
+      <div class="section">
+        <a  name="dev"></a>
+        <h2>my projects</h2>
+        Here, I will post all the repo's of all the projects available for public viewing.
+        <br>
+        <br>
+        <div class="flex-grid-thirds">
+
+          <div class="col">
+            <a href="https://github.com/illyanyc/pyCondrop" style="text-decoration: none;">
+              <div class="git-repo-title" style="background: #1a8bbc"><h2>PyCondrop v0.1</h2></div>
+            </a>
+            <p>Computer vision software used to detect cleaning by condensed water drops on self-cleaning hydrophobic solar glass coatings, or any other surface.
+            </p>
+          </div>
+
+          <div class="col">
+            <a href="https://github.com/illyanyc/superhydrophobic-topo-from-afm" style="text-decoration: none;">
+              <div class="git-repo-title" style="background: #1abca1"><h2>AFM Topo Mapper</h2></div>
+            </a>
+            <p>2D mapping of water drop minuscus on rough surface nanostructurs from AFM data.
+            </p>
+          </div>
+
+          <div class="col">
+            <a href="https://github.com/illyanyc/technitrade" style="text-decoration: none;">
+              <div class="git-repo-title" style="background: #bc581a"><h2>technitrade</h2></div>
+            </a>
+            <p>(in process) Python library of tehcnical analysis indicators and data connectors (Alpaca, Yahoo, Quandl, IBKR, etc.)
+            </p>
+          </div>
+
+        </div>
+        <div class="flex-grid-thirds">
+
+          <div class="col">
+            <a href="https://github.com/illyanyc/powerfolio" style="text-decoration: none;">
+              <div class="git-repo-title" style="background: #a4bc1a"><h2>Powerfolio! v1</h2></div>
+            </a>
+            <p>Screener, portfolio builder and analyzer. It implements fundamental analysis, technical analysis, Sharpe Ratio and Efficient Frontier. (Columbia Fintech Bootcamp Assignment)
+            </p>
+          </div>
+
+          <div class="col">
+            <a href="https://github.com/illyanyc" style="text-decoration: none;">
+              <div class="git-repo-title" style="background: #631abc"><h2>my github</h2></div>
+            </a>
+            <p>more projects are viewable on my github...
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!--my research-->
+      <div class="section">
+        <a  name="research"></a>
+        <p><h2>research</h2></p>
+        During my Ph.D. research I have worked to develop self-cleaning, anti-soiling, and anti-reflective surface coatings for solar panel glass. These coatings prevent dust from accumulating on the surface of the solar panel, lowering the reflection of the sunlight and thus increasing the efficiency of the PV module. Anti-reflective component of the surface coating increases the amount of light that would normally pass through the glass to reach the solar module underneath, futher increasing the efficiency of the PV module.
+        <br>
+        <br>
+        You can read more about my research on <a href="https://www.gc.cuny.edu/About-the-GC/Provost-s-Office/The-Sciences/Spotlight/Contents/Alumni/Chemistry/Illya-Nayshevsk">CUNY Grad Center's Spotlight summary<a>.
+          <br>
+          <br>
+          ... or watch me talk about my research below:
+
+          <!--youtube video-->
+          <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B9bbmg-olKo?start=1216" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+        <!--publications-->
+        <div class="section">
+          <a  name="publications"></a>
+          <h2>publications</h2>
+          My academic publications:
+          <br>
+          <br>
+
+          <div class="flex-grid-flat">
+
+            <div class="col">
+              <a href="https://doi.org/10.1109/PVSC.2017.8366777" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Anti-reflective and anti-soiling properties of a KleanBoost™, a superhydrophobic nano-textured coating for solar glass
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan Lyons<br>
+                2017 IEEE 44th Photovoltaic Specialist Conference (PVSC), 2017, pp. 2285-2290<br>
+                doi: 10.1109/PVSC.2017.8366777
+                <br>
+                <br>
+                <b>Abstract:</b>
+                Soiling of solar cover glass can result in a significant loss of electrical output of PV panels. Dust and other contaminants adhere strongly to the glass by known mechanisms. In contrast, anti-soiling coatings, and the mechanisms by which they function, are not well-characterized. In this paper, we examine the properties of KleanBoostTM a thin anti-reflective and anti-soiling fluoropolymer coating for glass...
+              </p>
+              <a href="https://doi.org/10.1109/PVSC.2017.8366777" class="ieee-doi-button">IEEEExplore</a>
+              <a href="https://www.researchgate.net/publication/337171504_Anti-reflective_and_anti-soiling_properties_of_a_KleanBoost_a_superhydrophobic_nano-textured_coating_for_solar_glass" class="rg-button">Research Gate</a>
+            </div>
+
+            <div class="col">
+              <a href="bit.ly/soiling" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Literature Survey of Dust Particle Dimensions on Soiled Solar Panel Modules
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
+                Poster Presented at the International PV Soiling Workshop, Golden CO, 2018<br>
+                <a href="bit.ly/soiling">bit.ly/soiling</a>
+              </p>
+              <a href="http://www.condensationexperiments.com/WorldBubbleMap/mymap.html" class="doi-button">Hosted site</a>
+            </div>
+
+            <div class="col">
+              <a href="https://doi.org/10.1109/JPHOTOV.2018.2882636" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Hydrophobic–Hydrophilic Surfaces Exhibiting Dropwise Condensation for Anti-Soiling Applications
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
+                IEEE Journal of Photovoltaics, vol. 9, no. 1, pp. 302-307, Jan. 2019<br>
+                doi: 10.1109/JPHOTOV.2018.2882636
+                <br>
+                <br>
+                <b>Abstract:</b> Soiling of solar cover glass is a significant challenge that increases the levelized cost of electricity of solar photovoltaic energy through loss of electrical output and/or increased operation and maintenance costs. Hydrophobic coatings can reduce the cost of cleaning, but an external source of cleaning water is still required. Dew, however, can be harnessed to create a self-cleaning glass surface. To efficiently use condensation (i.e., natural dew) to create a self-cleaning glass surface, we fabricated a hybrid hydrophobic-hydrophilic coating, with an array of isolated hydrophilic circular rings...
+              </p>
+              <a href="https://doi.org/10.1109/JPHOTOV.2018.2882636" class="ieee-doi-button">IEEE JPV</a>
+              <a href="https://www.researchgate.net/publication/329616971_Hydrophobic-Hydrophilic_Surfaces_Exhibiting_Dropwise_Condensation_for_Anti-Soiling_Applications" class="rg-button">Research Gate</a>
+            </div>
+
+            <div class="col">
+              <a href="https://doi.org/10.1016/j.solmat.2019.110281" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Fluoropolymer coatings for solar cover glass: Anti-soiling mechanisms in the presence of dew
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan Lyons<br>
+                Solar Energy Materials and Solar Cells, Volume 206, 2020, 110281, ISSN 0927-0248<br>
+                doi: 10.1016/j.solmat.2019.110281
+                <br>
+                <br>
+                <b>Highlights:</b><br>
+                • Hydrophobic coatings reduce soiling rates by 42% compared to hydrophilic surfaces.<br>
+                • Two mechanisms reduce soiling: dropwise condensation and high water droplet mobility.<br>
+                • Soil becomes concentrated, or herded, as droplets evaporate on hydrophobic coatings.<br>
+                • Cleaning efficacy improved by reduced soil-coating and water-coating interactions.<br>
+              </p>
+              <a href="https://doi.org/10.1016/j.solmat.2019.110281" class="solmat-doi-button">Sol-Mat</a>
+              <a href="https://www.researchgate.net/publication/337511614_Fluoropolymer_coatings_for_solar_cover_glass_Anti-soiling_mechanisms_in_the_presence_of_dew" class="rg-button">Research Gate</a>
+            </div>
+
+            <div class="col">
+              <a href="https://doi.org/10.1109/JPHOTOV.2019.2955559" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Self-Cleaning Hybrid Hydrophobic–Hydrophilic Surfaces: Durability and Effect of Artificial Soilant Particle Type
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Illya Nayshevsky; QianFeng Xu; Jimmy M. Newkirk; Daniel Furhang; David C. Miller; Alan M. Lyons<br>
+                IEEE Journal of Photovoltaics, vol. 10, no. 2, pp. 577-584, March 2020<br>
+                doi: 10.1109/JPHOTOV.2019.2955559
+                <br>
+                <br>
+                <b>Abstract:</b> Dew accelerates the soiling rates and increases the dust adhesion. To use dew for self-cleaning, a fluorinated ethylene propylene coating was applied to suppress the reactions between dust and glass as well as to facilitate the dew to condense as mobile droplets. An array of rectangular hydrophilic channels in the coating increases the condensation rates and droplet slide-off diameters. The durability of the coating was evaluated by artificial UV weathering. Four different types of soilants were used in the artificial soiling tests to assess the effect of soilant type and surface properties on the soiling rates and self-cleaning efficacy under the simulated dew conditions. Soil deposition and self-cleaning mechanisms are being reported.
+              </p>
+              <a href="https://doi.org/10.1109/JPHOTOV.2019.2955559" class="ieee-doi-button">IEEE JPV</a>
+              <a href="https://www.researchgate.net/publication/338146759_Self-Cleaning_Hybrid_Hydrophobic-Hydrophilic_Surfaces_Durability_and_Effect_of_Artificial_Soilant_Particle_Type" class="rg-button">Research Gate</a>
+            </div>
+
+            <div class="col">
+              <a href="https://doi.org/10.1016/j.solmat.2020.110757" style="text-decoration: none;">
+                <div class="pub-title">
+                  <h2>
+                    Artificial linear brush abrasion of coatings for photovoltaic module first-surfaces
+                  </h2>
+                </div>
+              </a>
+              <p class="pub-text">
+                Jimmy M. Newkirk; Illya Nayshevsky; Archana Sinha; Adam M. Law; QianFeng Xu; Bobby To; Paul F. Ndione; Laura T. Schelhas; John M. Walls; Alan M. Lyons; David C. Miller<br>
+                Solar Energy Materials and Solar Cells, Volume 219, 2021, 10757, ISSN 0927-0248<br>
+                doi: 10.1016/j.solmat.2020.110757
+                <br>
+                <br>
+                <b>Highlights</b><br>
+                • Correlation between transmittance, yellowness, surface energy, and roughness consistent with history of film degradation.<br>
+                • Damage primarily results from the facets and edges of dust particles and/or brush bristles, i.e., localized abrasion sources.<br>
+                • A variety of longevities from 100 cycles to 1000 cycles to 10000 cycles was observed for the representative specimens here.<br>
+                • Test parameter details as well as post examination suggest improvement of the linear artificial brush abrasion method.<br>
+              </p>
+              <a href="https://doi.org/10.1016/j.solmat.2020.110757" class="solmat-doi-button">Sol-Mat</a>
+              <a href="https://www.researchgate.net/publication/344708774_Artificial_linear_brush_abrasion_of_coatings_for_photovoltaic_module_first-surfaces" class="rg-button">Research Gate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="page-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h3 class="feature-title">Get in Touch!</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" name="">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <h6 class="text-uppercase font-weight-bold">contact.</h6>
+              <p>New York City
+              <br/>illya.nayshevsky@gmail.com
+              <br/>www.aic.llc
+          </div>
+      <div>
+      </footer>
+
+          <!-- <a href="https://www.facebook.com/profile.php?id=100003375492977" class="fb-btn">Facebook</a>
+          <a href="https://www.instagram.com/illya.ny" class="ig-btn">Instagram</a>
+          <a href="https://www.researchgate.net/profile/Illya-Nayshevsky" class="rg-btn">Research Gate</a>
+          <a href="https://www.linkedin.com/in/illyanayshevskyy/" class="ln-btn">LinkedIn</a> -->
+
+        </div>
+      </div>
+
+    </body>
+    </html>
