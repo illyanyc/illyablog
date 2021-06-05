@@ -23,11 +23,25 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
       <script src="js/main.js"></script>
 
+      <script>
+        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+          if (!$(this).next().hasClass('show')) {
+              $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass('show');
+          $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+              $('.dropdown-submenu .show').removeClass("show");
+          });
+          return false;
+      });
+      </script>
+
 
       <!-- start navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="#">illya nayshevsky, ph.d.</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="dropdown" data-target="#main-navigation" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navigation">
@@ -44,9 +58,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#publications">publications</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#books">books</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -56,8 +70,8 @@
       <header class="page-header header container-fluid">
   			<div class="overlay"></div>
   			<div class="quote-sec">
-          <h2>"<i>The universe is change; our life is what our thoughts make it.</i>"</h2>
-          <h3>- Marcus Aurelius</h3>
+          <p>"<i>The universe is change; our life is what our thoughts make it.</i>"</p>
+          <p>- Marcus Aurelius</p>
   			</div>
   		</header>
       <!-- end header -->
@@ -154,64 +168,107 @@
           <h5><i>here are some of my projects that are available to the public:<br><br></i></h5>
           <div class="col">
 
-            <!-- DOI: 10.1109/PVSC.2017.8366777 -->
+            <!-- 10.1016/j.solmat.2020.110757 -->
             <div class="container-md row" style="padding: 5%">
               <div class="col-sm-auto col-md-auto col-lg-3">
                 <div class="img">
                   <!-- Link to publication via logo -->
-                  <a href="https://doi.org/10.1109/PVSC.2017.8366777">
-                    <img src="img/logos/ieee.jpg" width="100%">
+                  <a href="https://doi.org/10.1016/j.solmat.2020.110757">
+                    <img src="img/logos/solmat.png" width="100%">
                   </a>
                 </div>
               </div>
               <div class="col-sm-auto col-md-auto col-lg-8">
                 <!-- Article title -->
                 <div class="row-2">
-                  <h5>Anti-reflective and anti-soiling properties of a KleanBoost™, a superhydrophobic nano-textured coating for solar glass</h5>
-                </div>
-                <div class="row-3">
-                  <p>
-                    Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan M. Lyons<br>
-                    2017 IEEE 44th Photovoltaic Specialist Conference (PVSC), 2017, pp. 2285-2290<br>
-                    doi: 10.1109/PVSC.2017.8366777
-                  </p>
-                </div>
-                <!-- Abstract -->
-                <div class="row-3 text-justify" style="height: 10em; overflow-y:scroll;">
-                  <p>
-                    <b>Abstract:</b>Soiling of solar cover glass can result in a significant loss of electrical output of PV panels. Dust and other contaminants adhere strongly to the glass by known mechanisms. In contrast, anti-soiling coatings, and the mechanisms by which they function, are not well-characterized. In this paper, we examine the properties of KleanBoostTM a thin anti-reflective and anti-soiling fluoropolymer coating for glass. In particular, we examine the effect of dew and baking cycles on dust accumulation and optical transparency. A dust “herding” process was observed as the condensed water droplets reduce in diameter as they evaporate on the hydrophobic surface. Anti-soiling and cleaning mechanisms were evaluated as a function of hydrophobicity of the glass nanocoating, and the KleanBoostTM surfaces were characterized and compared to their anti-soiling and cleaning properties.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- bit.ly/soiing -->
-            <div class="container-md row" style="padding: 5%">
-              <div class="col-sm-auto col-md-auto col-lg-3">
-                <div class="img">
-                  <!-- Link to publication via logo -->
-                  <a href="http://www.condensationexperiments.com/WorldBubbleMap/mymap.html">
-                    <img src="img/logos/cuny.png" width="100%">
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-auto col-md-auto col-lg-8">
-                <!-- Article title -->
-                <div class="row-2">
-                  <h5>Literature Survey of Dust Particle Dimensions on Soiled Solar Panel Modules
+                  <h5>Artificial linear brush abrasion of coatings for photovoltaic module first-surfaces
                   </h5>
                 </div>
                 <!-- Article header -->
                 <div class="row-3">
                   <p>
-                    Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
-                    Poster Presented at the International PV Soiling Workshop, Golden CO, 2018
+                    Jimmy M. Newkirk; Illya Nayshevsky; Archana Sinha; Adam M. Law; QianFeng Xu; Bobby To; Paul F. Ndione; Laura T. Schelhas; John M. Walls; Alan M. Lyons; David C. Miller<br>
+                    Solar Energy Materials and Solar Cells, Volume 219, 2021, 10757, ISSN 0927-0248<br>
+                    doi: 10.1016/j.solmat.2020.110757<br>
                   </p>
                 </div>
                 <!-- Abstract -->
                 <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
                   <p>
-                    <b>Abstract:</b>The map of the median particle size has been plotted utilizing data found in literature. The data on soil particle size was gathered from academic articles reporting soil particle parameters on solar photovoltaic cells and concentrators. Geographical locations of dust source are plotted on the map as colored rings. The color of the rings corresponds to mean or median dust particle diameter (µm).
+                    <b>Highlights:</b>
+                    • Correlation between transmittance, yellowness, surface energy, and roughness consistent with history of film degradation.<br>
+                    • Damage primarily results from the facets and edges of dust particles and/or brush bristles, i.e., localized abrasion sources.<br>
+                    • A variety of longevities from 100 cycles to 1000 cycles to 10000 cycles was observed for the representative specimens here.<br>
+                    • Test parameter details as well as post examination suggest improvement of the linear artificial brush abrasion method.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 10.1109/JPHOTOV.2019.2955559 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1109/JPHOTOV.2019.2955559">
+                    <img src="img/logos/ieeejpv.jpg" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Self-Cleaning Hybrid Hydrophobic–Hydrophilic Surfaces: Durability and Effect of Artificial Soilant Particle Type
+                  </h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Jimmy M. Newkirk; Daniel Furhang; David C. Miller; Alan M. Lyons<br>
+                    IEEE Journal of Photovoltaics, vol. 10, no. 2, pp. 577-584, March 2020<br>
+                    doi: 10.1109/JPHOTOV.2019.2955559
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>Dew accelerates the soiling rates and increases the dust adhesion. To use dew for self-cleaning, a fluorinated ethylene propylene coating was applied to suppress the reactions between dust and glass as well as to facilitate the dew to condense as mobile droplets. An array of rectangular hydrophilic channels in the coating increases the condensation rates and droplet slide-off diameters. The durability of the coating was evaluated by artificial UV weathering. Four different types of soilants were used in the artificial soiling tests to assess the effect of soilant type and surface properties on the soiling rates and self-cleaning efficacy under the simulated dew conditions. Soil deposition and self-cleaning mechanisms are being reported.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.1016/J.SOLMAT.2019.11028 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1016/j.solmat.2019.110281">
+                    <img src="img/logos/solmat.png" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Fluoropolymer coatings for solar cover glass: Anti-soiling mechanisms in the presence of dew</h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan M. Lyons<br>
+                    Solar Energy Materials and Solar Cells, Volume 206, 2020, 110281, ISSN 0927-0248
+                    doi: 10.1016/j.solmat.2019.110281<br>
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Highlights:</b><br>
+                    • Hydrophobic coatings reduce soiling rates by 42% compared to hydrophilic surfaces.<br>
+                    • Two mechanisms reduce soiling: dropwise condensation and high water droplet mobility.<br>
+                    • Soil becomes concentrated, or herded, as droplets evaporate on hydrophobic coatings.<br>
+                    • Cleaning efficacy improved by reduced soil-coating and water-coating interactions.<br>
                   </p>
                 </div>
               </div>
@@ -249,116 +306,75 @@
               </div>
             </div>
 
-            <!-- 10.1016/J.SOLMAT.2019.11028 -->
+            <!-- bit.ly/soiing -->
             <div class="container-md row" style="padding: 5%">
               <div class="col-sm-auto col-md-auto col-lg-3">
                 <div class="img">
                   <!-- Link to publication via logo -->
-                  <a href="https://doi.org/10.1016/j.solmat.2019.110281">
-                    <img src="img/logos/elsevier.png" width="70%">
+                  <a href="http://www.condensationexperiments.com/WorldBubbleMap/mymap.html">
+                    <img src="img/logos/cuny.png" width="100%">
                   </a>
                 </div>
               </div>
               <div class="col-sm-auto col-md-auto col-lg-8">
                 <!-- Article title -->
                 <div class="row-2">
-                  <h5>Fluoropolymer coatings for solar cover glass: Anti-soiling mechanisms in the presence of dew</h5>
+                  <h5>Literature Survey of Dust Particle Dimensions on Soiled Solar Panel Modules
+                  </h5>
                 </div>
                 <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
+                    Poster Presented at the International PV Soiling Workshop, Golden CO, 2018
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>The map of the median particle size has been plotted utilizing data found in literature. The data on soil particle size was gathered from academic articles reporting soil particle parameters on solar photovoltaic cells and concentrators. Geographical locations of dust source are plotted on the map as colored rings. The color of the rings corresponds to mean or median dust particle diameter (µm).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOI: 10.1109/PVSC.2017.8366777 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1109/PVSC.2017.8366777">
+                    <img src="img/logos/ieee.jpg" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Anti-reflective and anti-soiling properties of a KleanBoost™, a superhydrophobic nano-textured coating for solar glass</h5>
+                </div>
                 <div class="row-3">
                   <p>
                     Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan M. Lyons<br>
-                    Solar Energy Materials and Solar Cells, Volume 206, 2020, 110281, ISSN 0927-0248
-                    doi: 10.1016/j.solmat.2019.110281<br>
+                    2017 IEEE 44th Photovoltaic Specialist Conference (PVSC), 2017, pp. 2285-2290<br>
+                    doi: 10.1109/PVSC.2017.8366777
                   </p>
                 </div>
                 <!-- Abstract -->
-                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                <div class="row-3 text-justify" style="height: 10em; overflow-y:scroll;">
                   <p>
-                    <b>Highlights:</b><br>
-                    • Hydrophobic coatings reduce soiling rates by 42% compared to hydrophilic surfaces.<br>
-                    • Two mechanisms reduce soiling: dropwise condensation and high water droplet mobility.<br>
-                    • Soil becomes concentrated, or herded, as droplets evaporate on hydrophobic coatings.<br>
-                    • Cleaning efficacy improved by reduced soil-coating and water-coating interactions.<br>
+                    <b>Abstract:</b>Soiling of solar cover glass can result in a significant loss of electrical output of PV panels. Dust and other contaminants adhere strongly to the glass by known mechanisms. In contrast, anti-soiling coatings, and the mechanisms by which they function, are not well-characterized. In this paper, we examine the properties of KleanBoostTM a thin anti-reflective and anti-soiling fluoropolymer coating for glass. In particular, we examine the effect of dew and baking cycles on dust accumulation and optical transparency. A dust “herding” process was observed as the condensed water droplets reduce in diameter as they evaporate on the hydrophobic surface. Anti-soiling and cleaning mechanisms were evaluated as a function of hydrophobicity of the glass nanocoating, and the KleanBoostTM surfaces were characterized and compared to their anti-soiling and cleaning properties.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- 10.1109/JPHOTOV.2019.2955559 -->
-            <div class="container-md row" style="padding: 5%">
-              <div class="col-sm-auto col-md-auto col-lg-3">
-                <div class="img">
-                  <!-- Link to publication via logo -->
-                  <a href="https://doi.org/10.1109/JPHOTOV.2019.2955559">
-                    <img src="img/logos/ieeejpv.jpg" width="100%">
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-auto col-md-auto col-lg-8">
-                <!-- Article title -->
-                <div class="row-2">
-                  <h5>Self-Cleaning Hybrid Hydrophobic–Hydrophilic Surfaces: Durability and Effect of Artificial Soilant Particle Type
-                  </h5>
-                </div>
-                <!-- Article header -->
-                <div class="row-3">
-                  <p>
-                    Illya Nayshevsky; QianFeng Xu; Jimmy M. Newkirk; Daniel Furhang; David C. Miller; Alan M. Lyons<br>
-                    IEEE Journal of Photovoltaics, vol. 10, no. 2, pp. 577-584, March 2020<br>
-                    doi: 10.1109/JPHOTOV.2019.2955559
-                  </p>
-                </div>
-                <!-- Abstract -->
-                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
-                  <p>
-                    <b>Abstract:</b>Dew accelerates the soiling rates and increases the dust adhesion. To use dew for self-cleaning, a fluorinated ethylene propylene coating was applied to suppress the reactions between dust and glass as well as to facilitate the dew to condense as mobile droplets. An array of rectangular hydrophilic channels in the coating increases the condensation rates and droplet slide-off diameters. The durability of the coating was evaluated by artificial UV weathering. Four different types of soilants were used in the artificial soiling tests to assess the effect of soilant type and surface properties on the soiling rates and self-cleaning efficacy under the simulated dew conditions. Soil deposition and self-cleaning mechanisms are being reported.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- 10.1016/j.solmat.2020.110757 -->
-            <div class="container-md row" style="padding: 5%">
-              <div class="col-sm-auto col-md-auto col-lg-3">
-                <div class="img">
-                  <!-- Link to publication via logo -->
-                  <a href="https://doi.org/10.1016/j.solmat.2020.110757">
-                    <img src="img/logos/elsevier.png" width="70%">
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-auto col-md-auto col-lg-8">
-                <!-- Article title -->
-                <div class="row-2">
-                  <h5>Artificial linear brush abrasion of coatings for photovoltaic module first-surfaces
-                  </h5>
-                </div>
-                <!-- Article header -->
-                <div class="row-3">
-                  <p>
-                    Jimmy M. Newkirk; Illya Nayshevsky; Archana Sinha; Adam M. Law; QianFeng Xu; Bobby To; Paul F. Ndione; Laura T. Schelhas; John M. Walls; Alan M. Lyons; David C. Miller<br>
-                    Solar Energy Materials and Solar Cells, Volume 219, 2021, 10757, ISSN 0927-0248<br>
-                    doi: 10.1016/j.solmat.2020.110757<br>
-                  </p>
-                </div>
-                <!-- Abstract -->
-                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
-                  <p>
-                    <b>Highlights:</b>
-                    • Correlation between transmittance, yellowness, surface energy, and roughness consistent with history of film degradation.<br>
-                    • Damage primarily results from the facets and edges of dust particles and/or brush bristles, i.e., localized abrasion sources.<br>
-                    • A variety of longevities from 100 cycles to 1000 cycles to 10000 cycles was observed for the representative specimens here.<br>
-                    • Test parameter details as well as post examination suggest improvement of the linear artificial brush abrasion method.<br>
-                  </p>
-                </div>
-              </div>
-            </div>
+            <!-- more research  -->
             <div class="col-auto">
               <div class="row">
                 <h5>More of my research is avaialbe on Research Gate.</h5>
               </div>
-              <div class="rounded mx-auto d-block">
+              <div class="img-auto">
                 <a href="https://www.researchgate.net/profile/Illya-Nayshevsky">
                   <img src="img/logos/rg.png" width="10%">
                 </a>
@@ -375,32 +391,24 @@
           <div class="container row">
 
             <!-- facebook -->
-            <div class="col-2">
-              <div class="rounded mx-auto d-block">
+            <div class="col-lg-4 col-md-2 col-sm-auto">
                 <a href="https://www.facebook.com/profile.php?id=100003375492977">
-                  <img src="img/logos/fb.png" width="50%">
+                  <img src="img/logos/fb.png" width="80px">
                 </a>
-              </div>
             </div>
-            
-
+          
             <!-- instagram -->
-            <div class="col-2">
-              <div class="rounded mx-auto d-block">
+            <div class="col-lg-4 col-md-2 col-sm-auto">
                 <a href="https://www.instagram.com/illya.ny">
-                  <img src="img/logos/ig.png" width="50%">
+                  <img src="img/logos/ig.png" width="80px">
                 </a>
-              </div>
             </div>
-            
 
             <!-- linkedin -->
-            <div class="col-2">
-              <div class="rounded mx-auto d-block">
+            <div class="col-lg-5=4 col-md-2 col-sm-auto">
                 <a href="https://www.linkedin.com/in/illyanayshevskyy/">
-                  <img src="img/logos/ln.png" width="50%">
+                  <img src="img/logos/ln.png" width="80px">
                 </a>
-              </div>
             </div>
             
           </div>

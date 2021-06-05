@@ -104,9 +104,10 @@ dfn {
 	}
 
 	.quote-sec p {
-		color: #fff;
+		color: rgb(0, 0, 0);
 		font-size: 1.3rem;
 		line-height: 1.5;
+		font-weight: bold;
 	}
 
 	.description button {
