@@ -24,7 +24,7 @@
       <script src="js/main.js"></script>
 
       <!-- start navbar -->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="#">illya nayshevsky, ph.d.</a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
           <span class="navbar-toggler-icon"></span>
@@ -62,75 +62,61 @@
       <!-- end header -->
 
       <!-- start about me -->
-      <a  name="about"></a>
-        <div class="container features">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-sm-8">
-              <h3 class="feature-title">about me</h3>
-              <p>Welcome to my personal page. I am a registered investment advisor in NY and hold a Ph.D. in chemistry from <a href="https://www.gc.cuny.edu/home">City University of New York</a>.
-                <br>
-                <br>
-                I have researched superhydrophobic nano-coatings for anti-soiling and self-cleaning solar glass applications as well as anti-reflective coatings. These coatings help make solar panels more efficeint by stopping dust from accumulating on their surface. Anti-reflective coatings help solar panels get more light.
-                Currently, I am the CEO, CIO and founder of <a href="https://www.aic.llc/">Alpha Inertia Capital</a>, which is a quant investment advisory firm powered by machine learning and big data.
-                <br>
-                <br>
-                Currently I am interested in: machine learning models trained on backtest data (LSTM on TF), blockchain developement (Solidity), and automated trade excecution using IBKR platform.
-                <br>
-                <br>
-                I'm proficient in python and C#, and am quite nimble with Numpy/pandas, scikit-learn, TensorFlow, OpenCV, Matplotlib/ Plotly/ hvPlot and Google Cloud Platform. I'm in terested in perfecting my Amazon AWS and Solidity skills. I'm an avid user of jupyter notebooks for developement and GCP deployments for production.
-                <br>
-                <br>
-                I like to travel and read. You can check out my IG for some of the most recent travel pics, and my reading list.
+      <a  name="about">
+        <div class="container section">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+              <h3 class="about-title">about me</h3>
+              <p>Welcome to my personal page. I am a registered investment advisor in NY and hold a Ph.D. in chemistry from <a href="https://www.gc.cuny.edu/home">City University of New York</a>. I have researched superhydrophobic nano-coatings for anti-soiling and self-cleaning solar glass applications as well as anti-reflective coatings. These coatings help make solar panels more efficeint by stopping dust from accumulating on their surface. Anti-reflective coatings help solar panels get more light. Currently, I am the CEO, CIO and founder of <a href="https://www.aic.llc/">Alpha Inertia Capital</a>, which is a quant investment advisory firm powered by machine learning and big data. Currently I am interested in: machine learning models trained on backtest data (LSTM on TF), blockchain developement (Solidity), and automated trade excecution using IBKR platform. I'm proficient in python and C#, and am quite nimble with Numpy/pandas, scikit-learn, TensorFlow, OpenCV, Matplotlib/ Plotly/ hvPlot and Google Cloud Platform. I'm in terested in perfecting my Amazon AWS and Solidity skills. I'm an avid user of jupyter notebooks for developement and GCP deployments for production. I like to travel and read. You can check out my IG for some of the most recent travel pics, and my reading list.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8">
+              <h3 class="feature-title"></h3>
+              <img src="img/illya.jpg" class="img-fluid rounded-circle">
+            </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-8">
-            <h3 class="feature-title"></h3>
-            <img src="img/illya.jpg" class="img-fluid rounded-circle">
-          </div>
-      </div>
+        </div>
+      </a> 
       <!-- end about me -->
 
       <!-- start my projects -->
       <a  name="projects">
-        <div class="container features">
-          <h3 class="feature-title">my projects</h3>
+        <div class="container section">
+          <h3 class="section-title">my projects</h3>
           <h5><i>here are some of my projects that are available to the public:<br><br></i></h5>
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
               <a href="https://github.com/illyanyc/pyCondrop" style="text-decoration: none;">
-                <img src="https://capsule-render.vercel.app/api?type=waving&color=74505e&width=1000&height=100&section=header&text=PyCondrop%20v0.1&fontSize=60&fontColor=black" class="img-fluid">
+                <img src="https://capsule-render.vercel.app/api?type=waving&color=be513b&width=1000&height=100&section=header&text=PyCondrop%20v0.1&fontSize=60&fontColor=black" class="img-fluid">
               </a>
               <p>Computer vision software used to detect cleaning by condensed water drops on self-cleaning hydrophobic solar glass coatings, or any other surface.</p>
             </div>
               
             <div class="col-lg-4 col-md-4 col-sm-12">
               <a href="https://github.com/illyanyc/superhydrophobic-topo-from-afm" style="text-decoration: none;">
-                <img src="https://capsule-render.vercel.app/api?type=waving&color=74505e&width=1000&height=100&section=header&text=AFM%20Topo%20Mapper&fontSize=60&fontColor=black" class="img-fluid">
+                <img src="https://capsule-render.vercel.app/api?type=waving&color=be513b&width=1000&height=100&section=header&text=AFM%20Topo%20Mapper&fontSize=60&fontColor=black" class="img-fluid">
               </a>
               <p>2D mapping of water drop minuscus on rough surface nanostructurs from AFM data.</p>
             </div>
               
             <div class="col-lg-4 col-md-4 col-sm-12">
               <a href="https://github.com/illyanyc/technitrade" style="text-decoration: none;">
-                <img src="https://capsule-render.vercel.app/api?type=waving&color=74505e&width=1000&height=100&section=header&text=technitrade&fontSize=60&fontColor=black" class="img-fluid">
+                <img src="https://capsule-render.vercel.app/api?type=waving&color=be513b&width=1000&height=100&section=header&text=technitrade&fontSize=60&fontColor=black" class="img-fluid">
               </a>
               <p>(under dev.) Python library of tehcnical analysis indicators and data connectors (Alpaca, Yahoo, Quandl, IBKR, etc.)</p>
             </div>
-
           </div>
 
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
               <a href="https://github.com/illyanyc/powerfolio" style="text-decoration: none;">
-                <img src="https://capsule-render.vercel.app/api?type=waving&color=74505e&width=1000&height=100&section=header&text=Powerfolio!&fontSize=60&fontColor=black" class="img-fluid">
+                <img src="https://capsule-render.vercel.app/api?type=waving&color=be513b&width=1000&height=100&section=header&text=Powerfolio!&fontSize=60&fontColor=black" class="img-fluid">
               </a>
               <p>Screener, portfolio builder and analyzer. It implements fundamental analysis, technical analysis, Sharpe Ratio and Efficient Frontier. (Columbia Fintech Bootcamp Assignment)</p>
             </div>
             
             <div class="col-lg-4 col-md-4 col-sm-12">
               <a href="https://github.com/illyanyc" style="text-decoration: none;">
-                <img src="https://capsule-render.vercel.app/api?type=waving&color=74505e&width=1000&height=100&section=header&text=my%20GitHub&fontSize=60&fontColor=black" class="img-fluid">
+                <img src="img/logos/github.png" class="img-fluid" width="100%">
               </a>
               <p>More projects available on my GitHub.</p>
             </div>
@@ -138,12 +124,299 @@
           </div>
         </div>
       </a>
+      <!-- end my projects -->
 
-      
+      <!-- start research -->
+      <a  name="research">
+        <div class="container section">
+          <div class="col-auto">
+            <h3 class="about-title">research</h3>
+            <p>My Ph.D. was focused on developing self-cleaning, anti-soiling, and anti-reflective surface coatings for solar panel glass. These coatings prevent dust from accumulating on the surface of the solar panel, lowering the reflection of the sunlight and thus increasing the efficiency of the PV module. Anti-reflective component of the surface coating increases the amount of light that would normally pass through the glass to reach the solar module underneath, futher increasing the efficiency of the PV module.<br>
+            <br>
+            You can read more about my research on <a href="https://www.gc.cuny.edu/About-the-GC/Provost-s-Office/The-Sciences/Spotlight/Contents/Alumni/Chemistry/Illya-Nayshevsk">CUNY Grad Center's Spotlight summary</a>.<br>
+            <br>
+            ... or watch me talk about my research below:<br></p>
+          </div>
+          <div class="col-auto">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B9bbmg-olKo?start=1217" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </a> 
+      <!-- end research -->
 
-  </div>
+      <!-- start publications -->
+      <a  name="publications">
+        <div class="container section">
+          <h3 class="section-title">publications</h3>
+          <h5><i>here are some of my projects that are available to the public:<br><br></i></h5>
+          <div class="col">
 
+            <!-- DOI: 10.1109/PVSC.2017.8366777 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1109/PVSC.2017.8366777">
+                    <img src="img/logos/ieee.jpg" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Anti-reflective and anti-soiling properties of a KleanBoost™, a superhydrophobic nano-textured coating for solar glass</h5>
+                </div>
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan M. Lyons<br>
+                    2017 IEEE 44th Photovoltaic Specialist Conference (PVSC), 2017, pp. 2285-2290<br>
+                    doi: 10.1109/PVSC.2017.8366777
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>Soiling of solar cover glass can result in a significant loss of electrical output of PV panels. Dust and other contaminants adhere strongly to the glass by known mechanisms. In contrast, anti-soiling coatings, and the mechanisms by which they function, are not well-characterized. In this paper, we examine the properties of KleanBoostTM a thin anti-reflective and anti-soiling fluoropolymer coating for glass. In particular, we examine the effect of dew and baking cycles on dust accumulation and optical transparency. A dust “herding” process was observed as the condensed water droplets reduce in diameter as they evaporate on the hydrophobic surface. Anti-soiling and cleaning mechanisms were evaluated as a function of hydrophobicity of the glass nanocoating, and the KleanBoostTM surfaces were characterized and compared to their anti-soiling and cleaning properties.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    </body>
+            <!-- bit.ly/soiing -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="http://www.condensationexperiments.com/WorldBubbleMap/mymap.html">
+                    <img src="img/logos/cuny.png" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Literature Survey of Dust Particle Dimensions on Soiled Solar Panel Modules
+                  </h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
+                    Poster Presented at the International PV Soiling Workshop, Golden CO, 2018
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>The map of the median particle size has been plotted utilizing data found in literature. The data on soil particle size was gathered from academic articles reporting soil particle parameters on solar photovoltaic cells and concentrators. Geographical locations of dust source are plotted on the map as colored rings. The color of the rings corresponds to mean or median dust particle diameter (µm).
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <!-- 10.1109/JPHOTOV.2018.2882636 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1109/PVSC.2017.8366777">
+                    <img src="img/logos/ieeejpv.jpg" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Hydrophobic–Hydrophilic Surfaces Exhibiting Dropwise Condensation for Anti-Soiling Applications</h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Alan M. Lyons<br>
+                    IEEE Journal of Photovoltaics, vol. 9, no. 1, pp. 302-307, Jan. 2019<br>
+                    doi: 10.1109/JPHOTOV.2018.2882636
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>Soiling of solar cover glass is a significant challenge that increases the levelized cost of electricity of solar photovoltaic energy through loss of electrical output and/or increased operation and maintenance costs. Hydrophobic coatings can reduce the cost of cleaning, but an external source of cleaning water is still required. Dew, however, can be harnessed to create a self-cleaning glass surface. To efficiently use condensation (i.e., natural dew) to create a self-cleaning glass surface, we fabricated a hybrid hydrophobic-hydrophilic coating, with an array of isolated hydrophilic circular rings. Water roll-off collection rates were measured in a simulated dew environment. The effect of hydrophilic ring geometry (location, arrangement, diameter, distance, and count) was studied to determine the optimal cleaning efficiency. The hybrid surface increased water collection rates by 95% over an uncoated (bare) glass surface and 51% compared with uniformly coated hydrophobic low-iron glass.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.1016/J.SOLMAT.2019.11028 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1016/j.solmat.2019.110281">
+                    <img src="img/logos/elsevier.png" width="70%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Fluoropolymer coatings for solar cover glass: Anti-soiling mechanisms in the presence of dew</h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Gil Barahman; Alan M. Lyons<br>
+                    Solar Energy Materials and Solar Cells, Volume 206, 2020, 110281, ISSN 0927-0248
+                    doi: 10.1016/j.solmat.2019.110281<br>
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Highlights:</b><br>
+                    • Hydrophobic coatings reduce soiling rates by 42% compared to hydrophilic surfaces.<br>
+                    • Two mechanisms reduce soiling: dropwise condensation and high water droplet mobility.<br>
+                    • Soil becomes concentrated, or herded, as droplets evaporate on hydrophobic coatings.<br>
+                    • Cleaning efficacy improved by reduced soil-coating and water-coating interactions.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.1109/JPHOTOV.2019.2955559 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1109/JPHOTOV.2019.2955559">
+                    <img src="img/logos/ieeejpv.jpg" width="100%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Self-Cleaning Hybrid Hydrophobic–Hydrophilic Surfaces: Durability and Effect of Artificial Soilant Particle Type
+                  </h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Illya Nayshevsky; QianFeng Xu; Jimmy M. Newkirk; Daniel Furhang; David C. Miller; Alan M. Lyons<br>
+                    IEEE Journal of Photovoltaics, vol. 10, no. 2, pp. 577-584, March 2020<br>
+                    doi: 10.1109/JPHOTOV.2019.2955559
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Abstract:</b>Dew accelerates the soiling rates and increases the dust adhesion. To use dew for self-cleaning, a fluorinated ethylene propylene coating was applied to suppress the reactions between dust and glass as well as to facilitate the dew to condense as mobile droplets. An array of rectangular hydrophilic channels in the coating increases the condensation rates and droplet slide-off diameters. The durability of the coating was evaluated by artificial UV weathering. Four different types of soilants were used in the artificial soiling tests to assess the effect of soilant type and surface properties on the soiling rates and self-cleaning efficacy under the simulated dew conditions. Soil deposition and self-cleaning mechanisms are being reported.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.1016/j.solmat.2020.110757 -->
+            <div class="container-md row" style="padding: 5%">
+              <div class="col-sm-auto col-md-auto col-lg-3">
+                <div class="img">
+                  <!-- Link to publication via logo -->
+                  <a href="https://doi.org/10.1016/j.solmat.2020.110757">
+                    <img src="img/logos/elsevier.png" width="70%">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-auto col-md-auto col-lg-8">
+                <!-- Article title -->
+                <div class="row-2">
+                  <h5>Artificial linear brush abrasion of coatings for photovoltaic module first-surfaces
+                  </h5>
+                </div>
+                <!-- Article header -->
+                <div class="row-3">
+                  <p>
+                    Jimmy M. Newkirk; Illya Nayshevsky; Archana Sinha; Adam M. Law; QianFeng Xu; Bobby To; Paul F. Ndione; Laura T. Schelhas; John M. Walls; Alan M. Lyons; David C. Miller<br>
+                    Solar Energy Materials and Solar Cells, Volume 219, 2021, 10757, ISSN 0927-0248<br>
+                    doi: 10.1016/j.solmat.2020.110757<br>
+                  </p>
+                </div>
+                <!-- Abstract -->
+                <div class="row-3 text-justify affix-content" style="height: 10em; overflow-y:scroll;">
+                  <p>
+                    <b>Highlights:</b>
+                    • Correlation between transmittance, yellowness, surface energy, and roughness consistent with history of film degradation.<br>
+                    • Damage primarily results from the facets and edges of dust particles and/or brush bristles, i.e., localized abrasion sources.<br>
+                    • A variety of longevities from 100 cycles to 1000 cycles to 10000 cycles was observed for the representative specimens here.<br>
+                    • Test parameter details as well as post examination suggest improvement of the linear artificial brush abrasion method.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row">
+                <h5>More of my research is avaialbe on Research Gate.</h5>
+              </div>
+              <div class="rounded mx-auto d-block">
+                <a href="https://www.researchgate.net/profile/Illya-Nayshevsky">
+                  <img src="img/logos/rg.png" width="10%">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <!-- end publications -->
+
+      <!-- start footer -->
+      <footer class="page-footer">
+        <div class="container section">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+
+              <!-- facebook -->
+              <div class="rounded mx-auto d-block">
+                <a href="https://www.facebook.com/profile.php?id=100003375492977">
+                  <img src="img/logos/fb.png" width="10%">
+                </a>
+              </div>
+
+              <!-- instagram -->
+              <div class="rounded mx-auto d-block">
+                <a href="https://www.instagram.com/illya.ny">
+                  <img src="img/logos/ig.png" width="10%">
+                </a>
+              </div>
+
+              <!-- linkedin -->
+              <div class="rounded mx-auto d-block">
+                <a href="https://www.linkedin.com/in/illyanayshevskyy/">
+                  <img src="img/logos/ln.png" width="10%">
+                </a>
+              </div>
+
+            </div>
+          
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Get in Touch!</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name" name="">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email Address" name="email">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+              </div>
+            <div>
+
+          <div class="footer-copyright text-center">
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">Copyright</a>
+          </div>
+        </div>  
+      </footer>
+      <!-- end footer -->
+
+    </div>
+  </body>
 </html>
