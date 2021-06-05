@@ -94,20 +94,18 @@ dfn {
 		color: 'black';
 	}
 
-	.quote-sec h2 {
+	.quote-sec h5 {
 		color: 'black';
 		text-align: center;
-	}
-	.quote-sec h3 {
-		color: 'black';
-		text-align: right;
+		font-size: 1.5em;
 	}
 
 	.quote-sec p {
 		color: 'black';
-		font-size: 1.3rem;
+		font-size: 1.3em;
 		line-height: 1.5;
 		font-weight: bold;
+		text-align: right;
 	}
 
 	.description button {
@@ -204,24 +202,24 @@ dfn {
 @media (max-width: 900px) {
 
 	.quote-sec {
-		left: 50%;
+		left: 30%;
 		position: absolute;
 		top: 45%;
-		transform: translate(-50%, -10%);
+		transform: translate(-30%, -10%);
 		text-align: center;
 		color: 'black';
 	}
 
-	.quote-sec h2 {
+	.quote-sec h5 {
 		
 		color: 'black';
-		text-align: center;
-		font-size: 1.5em;
+		text-align: left;
+		font-size: 1.0em;
 	}
-	.quote-sec h3 {
+	.quote-sec p {
 		color: 'black';
 		text-align: right;
-		font-size: 1.2em;
+		font-size: 0.9em;
 	}
 
 	.features {
