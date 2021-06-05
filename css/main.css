@@ -164,13 +164,7 @@ dfn {
 .page-footer {
     background-color: #222;
     color: #ccc;
-    padding: 60px 0 30px;
-	text-decoration: none;
-}
-
-.footer-copyright {
-    color: #666;
-    padding: 40px 0;
+    padding: 20px 0 30px;
 	text-decoration: none;
 }
 /* end footer */
