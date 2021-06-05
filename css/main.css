@@ -91,20 +91,20 @@ dfn {
 		top: 45%;
 		transform: translate(-50%, -10%);
 		text-align: center;
-	color: 'black';
+		color: 'black';
 	}
 
 	.quote-sec h2 {
 		color: 'black';
-	text-align: center;
+		text-align: center;
 	}
 	.quote-sec h3 {
 		color: 'black';
-	text-align: right;
+		text-align: right;
 	}
 
 	.quote-sec p {
-		color: rgb(0, 0, 0);
+		color: 'black';
 		font-size: 1.3rem;
 		line-height: 1.5;
 		font-weight: bold;
