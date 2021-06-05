@@ -23,6 +23,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
       <script src="js/main.js"></script>
 
+
       <!-- start navbar -->
       <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="#">illya nayshevsky, ph.d.</a>
@@ -137,8 +138,10 @@
             <br>
             ... or watch me talk about my research below:<br></p>
           </div>
-          <div class="col-auto">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/B9bbmg-olKo?start=1217" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="container col">
+            <div class="videowrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/B9bbmg-olKo?start=1217" id="youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </a> 
@@ -369,49 +372,37 @@
       <!-- start footer -->
       <footer class="page-footer">
         <div class="container section">
-          <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="container row">
 
-              <!-- facebook -->
+            <!-- facebook -->
+            <div class="col-2">
               <div class="rounded mx-auto d-block">
                 <a href="https://www.facebook.com/profile.php?id=100003375492977">
-                  <img src="img/logos/fb.png" width="10%">
+                  <img src="img/logos/fb.png" width="50%">
                 </a>
               </div>
+            </div>
+            
 
-              <!-- instagram -->
+            <!-- instagram -->
+            <div class="col-2">
               <div class="rounded mx-auto d-block">
                 <a href="https://www.instagram.com/illya.ny">
-                  <img src="img/logos/ig.png" width="10%">
+                  <img src="img/logos/ig.png" width="50%">
                 </a>
               </div>
+            </div>
+            
 
-              <!-- linkedin -->
+            <!-- linkedin -->
+            <div class="col-2">
               <div class="rounded mx-auto d-block">
                 <a href="https://www.linkedin.com/in/illyanayshevskyy/">
-                  <img src="img/logos/ln.png" width="10%">
+                  <img src="img/logos/ln.png" width="50%">
                 </a>
               </div>
-
             </div>
-          
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title">Get in Touch!</h3>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name" name="">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email Address" name="email">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="4"></textarea>
-                </div>
-                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
-              </div>
-            <div>
-
-          <div class="footer-copyright text-center">
-            <a href="https://creativecommons.org/licenses/by-nc/4.0/">Copyright</a>
+            
           </div>
         </div>  
       </footer>
