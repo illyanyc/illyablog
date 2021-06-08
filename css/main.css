@@ -123,16 +123,15 @@ dfn {
 
 	.videowrapper {
 		position: relative;
-		padding-bottom: 56.25%; /* 16:9 */
-		height: 0;
+		padding-bottom: 56.25%;
+		width: 50%; /* It should not be 100% */ 
+        height: 50%; 
+        margin-left: auto;   /* Automatic margin from left */ 
+        margin-right: auto; /* Automatic margin from right */ 
 	  }
 
 	.videowrapper iframe {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 	  }
 
 	/* begin about me */
@@ -162,7 +161,7 @@ dfn {
 
 /* start footer */
 .page-footer {
-    background-color: #222;
+    background-color: rgb(255, 255, 255);
     color: #ccc;
     padding: 20px 0 30px;
 	text-decoration: none;
@@ -216,16 +215,21 @@ dfn {
 		font-size: 0.9em;
 	}
 
+	.videowrapper {
+		width: 100%;  
+        height: 100%; 
+        margin-left: 2%;  
+        margin-right: 2%; 
+	  }
+
+	.videowrapper iframe {
+		height: 100%;
+		width: 100%;
+		align-self: center;
+	  }
+
 	.features {
 		margin: 0;
-	}
-
-	.team {
-		max-width: 60%;
-	}
-
-	#demo-modal .btn {
-		min-width: auto;
 	}
 }
 
